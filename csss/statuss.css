@@ -1,0 +1,35 @@
+.status{
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Avenir Next Bold", sans-serif;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+    transition: 600ms;
+}
+
+.status--success{
+    background-color: #348A2E;
+}
+
+.status--error{
+    background-color: #E44A4A;
+}
+
+.status--error,.status--success{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+@media (max-width: 800px) {
+    .status{
+        padding: 20px 5%;
+    }
+}

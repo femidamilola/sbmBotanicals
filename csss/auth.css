@@ -1,0 +1,26 @@
+.form-submit.loading {
+    color: transparent;
+    position: relative;
+    opacity: 0.6;
+}
+
+.form-submit.loading::before {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e1e1e1;
+    border-top-color: #898989;
+    animation: rotate 0.6s linear infinite;
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    right: calc(50% - 10px);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

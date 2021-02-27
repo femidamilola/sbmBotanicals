@@ -1,0 +1,85 @@
+.modalWrapper{
+    display: flex;
+    background-color: rgba(0,0,0,0.3);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.modal{
+    min-width: 60%;
+    min-height: 80vh;
+    background-color: white;
+    border-radius: 10px;
+    transition: 600ms;
+    transform: scale(0) translateY(30px);
+    padding: 50px;
+}
+
+.modalCancel{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.modalCancel img{
+    width: 100%;
+}
+
+.modalWrapper.active{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modalWrapper.active .modal{
+    transform: scale(1) translateY(0px);
+}
+
+.modalHeader{
+    font-family: Poppins,sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.modalText{
+    font-family: Poppins,sans-serif;
+    font-size: 16px;
+    color: #969696;
+    margin-bottom: 10px;
+}
+
+.modalInputLabel{
+    font-family: Poppins,sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+.modalInput{
+    width: 300px;
+    border-bottom: 1px solid #9e9e9e;
+    height: 30px;
+    font-family: Poppins,sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    .modal{
+        min-width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+    }
+}

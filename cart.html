@@ -29,6 +29,7 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
+<link rel="stylesheet" href="csss/cart.css"/>
 	<link rel='stylesheet' id='vc_extensions_cqbundle_adminicon-css'  href='wp-content/plugins/vc-extensions-bundle/css/admin_icon.css' type='text/css' media='all' />
 <link rel='stylesheet' id='sunnyjar-magnific-style-css'  href='wp-content/themes/sunnyjar/fw/js/magnific/magnific-popup.css' type='text/css' media='all' />
 <link rel='stylesheet' id='sb_instagram_styles-css'  href='wp-content/plugins/instagram-feed/css/sb-instagram-2-2.min.css' type='text/css' media='all' />
@@ -365,12 +366,87 @@ html .formcraft-css .powered-by {
 <div class="content_wrap">
 <div class="content">
 <article class="itemscope post_item post_item_single post_featured_center post_format_standard post-385 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
-<section class="post_content" itemprop="articleBody"><div class="woocommerce"><div class="woocommerce-notices-wrapper"></div><p class="cart-empty woocommerce-info">Your cart is currently empty.</p>	<p class="return-to-shop">
+<!-- <section class="post_content" itemprop="articleBody"><div class="woocommerce"><div class="woocommerce-notices-wrapper"></div><p class="cart-empty woocommerce-info">Your cart is currently empty.</p>	<p class="return-to-shop">
 		<a class="button wc-backward" href="shop.html">
 			Return to shop		</a>
 	</p>
 </div>
-				</section> <!-- </section> class="post_content" itemprop="articleBody"> -->
+				</section> </section> class="post_content" itemprop="articleBody"> -->
+
+				<div class="shopping-cart">
+
+					<div class="column-labels">
+					  <label class="product-image">Image</label>
+					  <label class="product-details">Product</label>
+					  <label class="product-price">Price</label>
+					  <label class="product-quantity">Quantity</label>
+					  <label class="product-removal">Remove</label>
+					  <label class="product-line-price">Total</label>
+					</div>
+				  
+					<div class="product">
+					  <div class="product-image">
+						<img src="wp-content/uploads/2020/03/WhatsApp Image 2021-02-25 at 09.41.30 (1).jpeg">
+					  </div>
+					  <div class="product-details">
+						<div class="product-title">Ceylon cinnamon</div>
+						<p class="product-description">Sbm Botanicals Organic Ceylon cinnamon Natural Food spice and herb.</p>
+					  </div>
+					  <div class="product-price">#3000</div>
+					  <div class="product-quantity">
+						<input type="number" value="2" min="1">
+					  </div>
+					  <div class="product-removal">
+						<button class="remove-product">
+						  Remove
+						</button>
+					  </div>
+					  <div class="product-line-price">#3000</div>
+					</div>
+				  
+					<div class="product">
+					  <div class="product-image">
+						<img src="wp-content/uploads/2020/03/WhatsApp Image 2021-02-25 at 09.41.30 (2).jpeg">
+					  </div>
+					  <div class="product-details">
+						<div class="product-title"></div>
+						<p class="product-description"> Botanicals Organic chia seed Natural Food spice and herb</p>
+					  </div>
+					  <div class="product-price">#1500</div>
+					  <div class="product-quantity">
+						<input type="number" value="1" min="1">
+					  </div>
+					  <div class="product-removal">
+						<button class="remove-product">
+						  Remove
+						</button>
+					  </div>
+					  <div class="product-line-price">#1500</div>
+					</div>
+				  
+					<div class="totals">
+					  <div class="totals-item">
+						<label>Subtotal</label>
+						<div class="totals-value" id="cart-subtotal">4500</div>
+					  </div>
+					  <div class="totals-item">
+						<label>Tax (5%)</label>
+						<div class="totals-value" id="cart-tax">3.60</div>
+					  </div>
+					  <div class="totals-item">
+						<label>Shipping</label>
+						<div class="totals-value" id="cart-shipping">15.00</div>
+					  </div>
+					  <div class="totals-item totals-item-total">
+						<label>Grand Total</label>
+						<div class="totals-value" id="cart-total">#4500</div>
+					  </div>
+					</div>
+						
+						<button class="checkout">Checkout</button>
+				  
+				  </div>
+
 			</article> <!-- </article> class="itemscope post_item post_item_single post_featured_center post_format_standard post-385 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article"> -->	<section class="related_wrap related_wrap_empty"></section>
 		</div> <!-- </div> class="content"> -->
 	</div> <!-- </div> class="content_wrap"> -->			
@@ -413,6 +489,7 @@ html .formcraft-css .powered-by {
 <div class="custom_html_section">
 </div>
 <!-- Instagram Feed JS -->
+<script type='text/javascript' src="wp-includes/js/jquery/ui/cart.js"></script>
 <script type="text/javascript">
 var sbiajaxurl = "index.html";
 </script>
@@ -428,7 +505,7 @@ var wpcf7 = {"apiSettings":{"root":"https:\/\/sbmnaturales.com.ng\/wp-json\/cont
 /* ]]> */
 </script>
 <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
-<script type='text/javascript'>
+<script type='text/javascript' src="wp-includes/js/jquery/ui/cart.js">
 /* <![CDATA[ */
 var TRX_UTILS_STORAGE = {"ajax_url":"index.html","ajax_nonce":"020f3b9f57","site_url":"https:\/\/sbmnaturales.com.ng","user_logged_in":"0","email_mask":"^([a-zA-Z0-9_\\-]+\\.)*[a-zA-Z0-9_\\-]+@[a-z0-9_\\-]+(\\.[a-z0-9_\\-]+)*\\.[a-z]{2,6}$","msg_ajax_error":"Invalid server answer!","msg_error_global":"Invalid field's value!","msg_name_empty":"The name can't be empty","msg_email_empty":"Too short (or empty) email address","msg_email_not_valid":"E-mail address is invalid","msg_text_empty":"The message text can't be empty","msg_send_complete":"Send message complete!","msg_send_error":"Transmit failed!","login_via_ajax":"1","msg_login_empty":"The Login field can't be empty","msg_login_long":"The Login field is too long","msg_password_empty":"The password can't be empty and shorter then 4 characters","msg_password_long":"The password is too long","msg_login_success":"Login success! The page will be reloaded in 3 sec.","msg_login_error":"Login failed!","msg_not_agree":"Please, read and check 'Terms and Conditions'","msg_email_long":"E-mail address is too long","msg_password_not_equal":"The passwords in both fields are not equal","msg_registration_success":"Registration success! Please log in!","msg_registration_error":"Registration failed!"};
 /* ]]> */

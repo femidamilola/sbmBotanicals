@@ -111,7 +111,7 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
     line-height: 1.4em;
   }
   .product .product-quantity input {
-    width: 40px;
+    width: 80px;
   }
   .product .remove-product {
     border: 0;
@@ -201,9 +201,7 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
       margin-left: 20px;
     }
   
-    .product-quantity:before {
-      content: 'x';
-    }
+ 
   
     .product-removal {
       width: auto;
@@ -238,4 +236,14 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
       width: 40%;
     }
   }
+
+  input[type="number"] {
+	outline: none;
+	-moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	appearance: none;
+}
   
